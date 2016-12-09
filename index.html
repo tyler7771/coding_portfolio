@@ -18,6 +18,7 @@
 <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
 <!-- StyleSheets -->
+<link rel="stylesheet" href="css/pictonic/css/pictonic.css">
 <link rel="stylesheet" href="css/ionicons.min.css">
 <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -64,22 +65,25 @@
 
   <!-- Header -->
   <header class="header single-pages">
-    <div class="sticky dark-header">
-      <div class="container">
-        <div class="logo"> <a href="index.html"><img src="images/logo.png" alt=""></a> </div>
+    <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky">
 
-        <!-- Nav -->
-        <nav>
-          <ul id="ownmenu" class="ownmenu">
-            <li class="scroll active"><a href="#wrap">HOME</a></li>
-            <li class="scroll"><a href="#about">ABOUT</a></li>
-            <li class="scroll"><a href="#portfolio">PROJECTS</a></li>
-            <li class="scroll"><a href="#services">services</a></li>
-            <li class="scroll"><a href="#team">TEAM</a></li>
-            <li class="scroll"><a href="#blog">blog</a></li>
-            <li class="scroll"><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
+      <div class="sticky dark-header">
+        <div class="container">
+          <div class="logo"> <a href="index.html"><img src="images/logo.png" alt=""></a> </div>
+
+          <!-- Nav -->
+          <nav>
+            <ul id="ownmenu" class="ownmenu">
+              <li class="scroll active"><a href="#wrap">HOME</a></li>
+              <li class="scroll"><a href="#about">ABOUT</a></li>
+              <li class="scroll"><a href="#portfolio">PROJECTS</a></li>
+              <li class="scroll"><a href="#education">education</a></li>
+              <li class="scroll"><a href="#team">TEAM</a></li>
+              <li class="scroll"><a href="#blog">blog</a></li>
+              <li class="scroll"><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -91,187 +95,54 @@
       <div class="tp-banner">
         <ul>
           <!-- SLIDE  -->
-          <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
+          <li data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
             <!-- MAIN IMAGE -->
             <img src="images/sliders/1/slide-1.jpg"  alt="slider"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
             <!-- LAYERS -->
 
             <!-- LAYER NR. 1 -->
-            <div class="tp-caption biglargetext sfr tp-resizeme"
-                data-x="center" data-hoffset="0"
-                data-y="center" data-voffset="-90"
-                data-speed="500"
-                data-start="1000"
-                data-easing="Power3.easeInOut"
-                data-splitin="chars"
-                data-splitout="none"
-                data-elementdelay="0.06"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">We Deliver </div>
-
-            <!-- LAYER NR. 2 -->
-            <div class="tp-caption verybiglargetext sfr tp-resizeme"
-                data-x="center" data-hoffset="0"
-                data-y="center" data-voffset="40"
-                data-speed="500"
-                data-start="1500"
-                data-easing="Power3.easeInOut"
-                data-splitin="chars"
-                data-splitout="none"
-                data-elementdelay="0.07"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">Excellence </div>
+            <div class="tp-caption biglargetext sfb tp-resizeme"
+              data-x="center" data-hoffset="0"
+              data-y="center" data-voffset="40"
+              data-speed="500"
+              data-start="1000"
+              data-easing="Power3.easeInOut"
+              data-splitin="none"
+              data-splitout="none"
+              data-elementdelay="0.06"
+              data-endelementdelay="0.1"
+              data-endspeed="300"
+              style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Tyler Fields
+            </div>
 
             <!-- LAYER NR. 3 -->
             <div class="tp-caption font-crimson font-italic sfb tp-resizeme"
-                data-x="center" data-hoffset="0"
-                data-y="center" data-voffset="140"
-                data-speed="500"
-                data-start="1900"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">We are Creative Stuido from Lon Don - UK </div>
+              data-x="center" data-hoffset="0"
+              data-y="center" data-voffset="120"
+              data-speed="500"
+              data-start="1000"
+              data-easing="Power3.easeInOut"
+              data-splitin="none"
+              data-splitout="none"
+              data-elementdelay="0.1"
+              data-endelementdelay="0.1"
+              data-endspeed="300"
+              style="z-index: 7; font-size:25px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">Software Developer
+            </div>
 
             <!-- LAYER NR. 4 -->
             <div class="tp-caption lfb tp-scrollbelowslider"
-                data-x="center" data-hoffset="0"
-                data-y="bottom" data-voffset="-50"
-                data-speed="500"
-                data-start="2400"
-                data-easing="Power3.easeInOut"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                data-scrolloffset="0"
-                style="z-index: 8;"><img src="images/sliders/6/enter.png" alt=""> </div>
-          </li>
-          <!-- SLIDE  -->
-          <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
-            <!-- MAIN IMAGE -->
-            <img src="images/sliders/1/slide-2.jpg"  alt="home_slider2"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-            <!-- LAYERS -->
-
-            <!-- LAYER NR. 1 -->
-            <div class="tp-caption sfb tp-resizeme"
-                data-x="center" data-hoffset="0"
-                data-y="center" data-voffset="-170"
-                data-speed="600"
-                data-start="1000"
-                data-easing="Power3.easeInOut"
-                data-splitin="chars"
-                data-splitout="none"
-                data-elementdelay="0.07"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="z-index: 5; font-size:40px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">ZAP MULTI-CONCEPT THEME </div>
-
-            <!-- LAYER NR. 2 -->
-            <div class="tp-caption font-crimson font-italic sfb tp-resizeme"
-                data-x="center" data-hoffset="0"
-                data-y="center" data-voffset="-100"
-                data-speed="600"
-                data-start="2500"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="z-index: 6; font-size:24px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">Create your custom color scheme with only a few clicks! </div>
-
-            <!-- LAYER NR. 4 -->
-            <div class="tp-caption sfb"
-                data-x="center" data-hoffset="0"
-                data-y="center" data-voffset="150"
-                data-speed="500"
-                data-start="3300"
-                data-easing="Power3.easeInOut"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="z-index: 8;"><img src="images/sliders/1/IMAC2.png" alt=""> </div>
-
-            <!-- LAYER NR. 6 -->
-            <div class="tp-caption skewfromleft tp-resizeme"
-                data-x="center" data-hoffset="0"
-                data-y="bottom" data-voffset="20"
-                data-speed="400"
-                data-start="4100"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;"><a href="#." class="btn btn-med btn-color">PURCHASES</a> </div>
-          </li>
-          <!-- SLIDE  -->
-          <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
-            <!-- MAIN IMAGE -->
-            <img src="images/sliders/1/slide-3.jpg"  alt="home_slider3"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-            <!-- LAYERS -->
-
-            <!-- LAYER NR. 1 -->
-            <div class="tp-caption font-bold skewfromright tp-resizeme"
-                data-x="center" data-hoffset="0"
-                data-y="center" data-voffset="-60"
-                data-speed="300"
-                data-start="1000"
-                data-easing="Power3.easeInOut"
-                data-splitin="chars"
-                data-splitout="none"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="z-index: 5; font-size:60px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">ZAP CREATIVE AGENCY </div>
-
-            <!-- LAYER NR. 2 -->
-            <div class="tp-caption font-crimson font-italic sfb tp-resizeme"
-                data-x="center" data-hoffset="0"
-                data-y="center" data-voffset="10"
-                data-speed="500"
-                data-start="2100"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="z-index: 6; font-size:30px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">10 + Unique Demo layouts </div>
-
-            <!-- LAYER NR. 3 -->
-            <div class="tp-caption skewfromleft tp-resizeme"
-                data-x="center" data-hoffset="-120"
-                data-y="center" data-voffset="100"
-                data-speed="500"
-                data-start="2500"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;"><a href="#." class="btn btn-med btn-color">PURCHASES</a> </div>
-
-            <!-- LAYER NR. 4 -->
-            <div class="tp-caption skewfromright tp-resizeme"
-                data-x="center" data-hoffset="120"
-                data-y="center" data-voffset="100"
-                data-speed="500"
-                data-start="2800"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;"><a href="#" class="btn btn-med btn-color">SEE OUR WORK</a> </div>
+              data-x="center" data-hoffset="0"
+              data-y="bottom" data-voffset="-50"
+              data-speed="500"
+              data-start="1900"
+              data-easing="Power3.easeInOut"
+              data-elementdelay="0.1"
+              data-endelementdelay="0.1"
+              data-endspeed="300"
+              data-scrolloffset="0"
+              style="z-index: 8;"><img src="images/sliders/6/enter.png" alt="">
+            </div>
           </li>
         </ul>
       </div>
@@ -291,10 +162,10 @@
 
           <!-- Intro Text -->
           <div class="col-md-9">
-            <div class="heading-block no-margin"> <span class="margin-bottom-10 animate fadeInUp" data-wow-delay="0.5s">Welcome The ZAP - Best solution for Creative Website</span>
-              <h2 class="margin-bottom-30 animate fadeInDown" data-wow-delay="0.5s">Awesome multi-concept theme</h2>
+            <div class="heading-block no-margin">
+              <h2 class="margin-bottom-30 animate fadeInDown" data-wow-delay="0.5s">About Me</h2>
             </div>
-            <p class="animate fadeIn" data-wow-delay="0.5s">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+            <p class="animate fadeIn" data-wow-delay="0.5s">I’ve always had a passion for creating things and working to make people’s lives better. I love web development because it combines my passions for creating and making things that are going to make people's lives better or easier. I was born and raised in the midwest. I love making and listening to music, disc golf, and a great cup of coffee. <br /><br /> I have experience working with:</p>
 
             <!-- Icon Row -->
             <div class="row margin-top-30 animate fadeInUp" data-wow-delay="0.5s">
@@ -302,9 +173,9 @@
               <!-- Icon -->
               <div class="col-md-4">
                 <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-light ib-small">
-                  <div class="ib-icon"> <i class="fa fa-diamond"></i> </div>
+                  <div class="ib-icon"> <i class="icon-prog-rails"></i> </div>
                   <div class="ib-info">
-                    <h6>Unique Design</h6>
+                    <h6>Ruby on Rails</h6>
                   </div>
                 </div>
               </div>
@@ -312,9 +183,9 @@
               <!-- Icon -->
               <div class="col-md-4">
                 <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-light ib-small">
-                  <div class="ib-icon"> <i class="fa fa-instagram"></i> </div>
+                  <div class="ib-icon"> <i class="icon-prog-js02"></i> </div>
                   <div class="ib-info">
-                    <h6>Photography</h6>
+                    <h6>Javascript</h6>
                   </div>
                 </div>
               </div>
@@ -322,15 +193,79 @@
               <!-- Icon -->
               <div class="col-md-4">
                 <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-light ib-small">
-                  <div class="ib-icon"> <i class="fa fa-magic"></i> </div>
+                  <div class="ib-icon"> <i class="icon-atom"></i> </div>
                   <div class="ib-info">
-                    <h6>Concept Art</h6>
+                    <h6>React</h6>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Icon -->
-            <a href="#." class="btn btn-large dark-border font-normal margin-top-80 letter-space-1 animate fadeInUp" data-wow-delay="0.5s">More Services</a> </div>
+            <div class="row margin-top-30 animate fadeInUp" data-wow-delay="0.5s">
+
+              <!-- Icon -->
+              <div class="col-md-4">
+                <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-light ib-small">
+                  <div class="ib-icon"> <i class="icon-prog-jquery"></i> </div>
+                  <div class="ib-info">
+                    <h6>JQuery</h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Icon -->
+              <div class="col-md-4">
+                <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-light ib-small">
+                  <div class="ib-icon"> <i class="icon-dbs-postgresql"></i> </div>
+                  <div class="ib-info">
+                    <h6>PostgreSQL</h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Icon -->
+              <div class="col-md-4">
+                <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-light ib-small">
+                  <div class="ib-icon"> <i class="icon-prog-ruby"></i> </div>
+                  <div class="ib-info">
+                    <h6>RSpec</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="row margin-top-30 animate fadeInUp" data-wow-delay="0.5s">
+
+            <!-- Icon -->
+            <div class="col-md-4">
+              <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-light ib-small">
+                <div class="ib-icon"> <i class="icon-html5-01"></i> </div>
+                <div class="ib-info">
+                  <h6>HTML5</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Icon -->
+            <div class="col-md-4">
+              <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-light ib-small">
+                <div class="ib-icon"> <i class="icon-css3-01"></i> </div>
+                <div class="ib-info">
+                  <h6>CSS3</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Icon -->
+            <div class="col-md-4">
+              <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-light ib-small">
+                <div class="ib-icon"> <i class="icon-vc-git"></i> </div>
+                <div class="ib-info">
+                  <h6>git</h6>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -340,18 +275,9 @@
       <div class="container">
         <!-- MAIN HEADING -->
         <div class="heading-block text-center animate fadeInUp" data-wow-delay="0.4s">
-          <h3>Our Works</h3>
+          <h3>My projects</h3>
           <div class="divider divider-short divider-center"><img class="i-div" src="images/divider/hammers.png" alt="Divider Icon Image"/></div>
-          <span>Show Amazing Your Works</span> </div>
-
-        <!-- Work Filter -->
-        <ul class="tabs portfolio-filter text-center margin-bottom-80 animate fadeInUp" data-wow-delay="0.4s">
-          <li class="tab-title filter-item"><a href="#." data-filter=".pf-branding-design">Branding Design</a></li>
-          <li class="tab-title filter-item"><a href="#." data-filter=".pf-photography">Photography</a></li>
-          <li class="tab-title filter-item"><a href="#." data-filter=".pf-web-design">Web Design</a></li>
-          <li class="tab-title filter-item"><a href="#." data-filter=".pf-digital-art">Digital Art</a></li>
-          <li class="tab-title filter-item"><a class="active" href="#." data-filter="*"><i class="fa fa-plus"></i></a></li>
-        </ul>
+          <span>Some things I've created that I think are cool!</span> </div>
       </div>
 
       <!-- PORTFOLIO ITEMS -->
@@ -359,45 +285,45 @@
 
         <!-- ITEM -->
         <article class="portfolio-item pf-branding-design pf-web-design">
-          <div class="portfolio-image"> <a href="#."> <img alt="Open Imagination" src="images/portfolio/1/portfolio-1.png"> </a> </div>
+          <div class="portfolio-image"> <a href="http://unbrewd.us"> <img alt="Open Imagination" src="images/portfolio/1/portfolio-1.png"> </a> </div>
           <div class="portfolio-overlay">
-            <div class="position-center-center"> <span><a href="#.">Fashion</a></span>
-              <h3><a href="#.">Crossfit : 15.4 Open Workout</a></h3>
+            <div class="position-center-center"> <span><a href="http://unbrewd.us">Full Stack</a></span>
+              <h3><a href="http://unbrewd.us">Unbrewd<br />Rails/React</a></h3>
             </div>
           </div>
         </article>
 
         <!-- ITEM -->
         <article class="portfolio-item pf-photography pf-branding-design">
-          <div class="portfolio-image"> <a href="#."> <img alt="Open Imagination" src="images/portfolio/1/portfolio-2.png"> </a> </div>
+          <div class="portfolio-image"> <a href="http://nevertellmetheodds.us"> <img alt="Open Imagination" src="images/portfolio/1/portfolio-2.png"> </a> </div>
           <div class="portfolio-overlay">
-            <div class="position-center-center"> <span><a href="#.">Fashion</a></span>
-              <h3><a href="#.">Crossfit : 15.4 Open Workout</a></h3>
+            <div class="position-center-center"> <span><a href="http://nevertellmetheodds.us">Front-End</a></span>
+              <h3><a href="http://nevertellmetheodds.us">Never Tell Me the Odds<br />Javascript/HTML Canvas</a></h3>
             </div>
           </div>
         </article>
 
         <!-- ITEM -->
         <article class="portfolio-item pf-web-design pf-branding-design">
-          <div class="portfolio-image"> <a href="#."> <img alt="Open Imagination" src="images/portfolio/1/portfolio-3.png"> </a> </div>
+          <div class="portfolio-image"> <a href="https://chrome.google.com/webstore/detail/guitartabfinder/dlelcgdgpoffihbnfgamnbkhdofabamg"> <img alt="Open Imagination" src="images/portfolio/1/portfolio-3.png"> </a> </div>
           <div class="portfolio-overlay">
-            <div class="position-center-center"> <span><a href="#.">Fashion</a></span>
-              <h3><a href="#.">Crossfit : 15.4 Open Workout</a></h3>
+            <div class="position-center-center"> <span><a href="https://chrome.google.com/webstore/detail/guitartabfinder/dlelcgdgpoffihbnfgamnbkhdofabamg">Chrome Extension</a></span>
+              <h3><a href="https://chrome.google.com/webstore/detail/guitartabfinder/dlelcgdgpoffihbnfgamnbkhdofabamg">GuitarTabFinder<br />Javascript/jQuery</a></h3>
             </div>
           </div>
         </article>
 
         <!-- ITEM -->
         <article class="portfolio-item pf-web-design pf-digital-art pf-branding-design">
-          <div class="portfolio-image"> <a href="#."> <img alt="Open Imagination" src="images/portfolio/1/portfolio-4.png"> </a> </div>
+          <div class="portfolio-image"> <a href="https://tyler7771.github.io/Synthaseizure/"> <img alt="Open Imagination" src="images/portfolio/1/portfolio-4.png"> </a> </div>
           <div class="portfolio-overlay">
-            <div class="position-center-center"> <span><a href="#.">Fashion</a></span>
-              <h3><a href="#.">Crossfit : 15.4 Open Workout</a></h3>
+            <div class="position-center-center"> <span><a href="https://tyler7771.github.io/Synthaseizure/">Front-End</a></span>
+              <h3><a href="https://tyler7771.github.io/Synthaseizure/">Synthaseizure<br />React</a></h3>
             </div>
           </div>
         </article>
 
-        <!-- ITEM -->
+<!--
         <article class="portfolio-item pf-branding-design pf-digital-art">
           <div class="portfolio-image"> <a href="#."> <img alt="Open Imagination" src="images/portfolio/1/portfolio-5.png"> </a> </div>
           <div class="portfolio-overlay">
@@ -407,7 +333,7 @@
           </div>
         </article>
 
-        <!-- ITEM -->
+
         <article class="portfolio-item pf-branding-design pf-digital-art">
           <div class="portfolio-image"> <a href="#."> <img alt="Open Imagination" src="images/portfolio/1/portfolio-6.png"> </a> </div>
           <div class="portfolio-overlay">
@@ -417,7 +343,7 @@
           </div>
         </article>
 
-        <!-- ITEM -->
+
         <article class="portfolio-item pf-branding-design pf-photography">
           <div class="portfolio-image"> <a href="#."> <img alt="Open Imagination" src="images/portfolio/1/portfolio-7.png"> </a> </div>
           <div class="portfolio-overlay">
@@ -427,7 +353,7 @@
           </div>
         </article>
 
-        <!-- ITEM -->
+
         <article class="portfolio-item pf-branding-design pf-digital-art">
           <div class="portfolio-image"> <a href="#."> <img alt="Open Imagination" src="images/portfolio/1/portfolio-8.png"> </a> </div>
           <div class="portfolio-overlay">
@@ -435,7 +361,7 @@
               <h3><a href="#.">Crossfit : 15.4 Open Workout</a></h3>
             </div>
           </div>
-        </article>
+        </article> -->
       </div>
     </section>
 
@@ -748,39 +674,6 @@
       <div class="padding-top-80 padding-bottom-80 bg-parallax" style="background-image: url('images/contact/contact-1.png')">
         <div class="container">
           <div class="row">
-
-            <!-- Phone Number  -->
-            <div class="col-md-4 animate fadeInUp" data-wow-delay="0.4s">
-              <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-white ib-bordered-thin ib-medium ib-text-alt i-xlarge">
-                <div class="ib-icon"> <i class="fa fa-mobile text-primary"></i> </div>
-                <div class="ib-info text-white">
-                  <p>+61 3 8376 6284</p>
-                  <p>+61 3 8376 6284</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Address -->
-            <div class="col-md-4 animate fadeInUp" data-wow-delay="0.6s">
-              <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-white ib-bordered-thin ib-medium ib-text-alt i-large">
-                <div class="ib-icon"> <i class="fa fa-map-marker text-primary"></i> </div>
-                <div class="ib-info text-white">
-                  <p>PO Box 21177</p>
-                  <p>Litte Lonsdale St, Melbourne</p>
-                  <p>Victoria 8011 Australia</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Email  -->
-            <div class="col-md-4 animate fadeInUp" data-wow-delay="0.8s">
-              <div class="icon-box ib-style-1 ib-circle ib-bordered ib-bordered-white ib-bordered-thin ib-medium ib-text-alt i-large">
-                <div class="ib-icon"> <i class="fa fa-envelope-o text-primary"></i> </div>
-                <div class="ib-info">
-                  <p class="no-margin-bottom"><a href="#." class="text-white">support@yourcompany.com</a></p>
-                </div>
-              </div>
-            </div>
 
             <!-- Form  -->
             <div class="col-md-12 margin-top-50 animate fadeInUp" data-wow-delay="0.4s">

@@ -8,21 +8,21 @@
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
-body 
+body
  + WRAP
  + HEADER
  + NAVIGATION
  + BANNER
  + SERVICES
  + OUR FEATURED FOUNDERS
- + BLOG UPDATES 
+ + BLOG UPDATES
  + APPOINMENT
  + NEWS FROM BLOG
  + PARTNERS / CLIENTS
  + FOOTER
  + SOCIAL ICONS
  + MEGA MENU
- + 3 MENU LEVEL 
+ + 3 MENU LEVEL
 -------------------------------------------------------------------*/
 /*=======================================================
       IMPORT FILE
@@ -768,7 +768,6 @@ header {
 	position: absolute;
 	width: 100%;
 	z-index: 999;
-	margin-top: 80px;
 }
 header .logo {
 	float: left;
@@ -2902,7 +2901,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	border: none;
 }
 /*===========================================
-    Rating Stars 
+    Rating Stars
 ===========================================*/
 .stars {
 	display: inline-block;
@@ -3631,7 +3630,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	float: right;
 }
 /*=======================================================
-			ICONS 
+			ICONS
 ========================================================*/
 .icon-box .ib-icon {
 	background-color: transparent;
@@ -6260,7 +6259,7 @@ blockquote cite {
 	color: #fff;
 }
 /*=======================================================
-			Instagram Section 
+			Instagram Section
 ========================================================*/
 .instagram-studio li {
 	padding: 0px;

@@ -5,14 +5,14 @@
 	padding-right: 20px;
 }
 }
-@media(max-width:1530px) { 
+@media(max-width:1530px) {
 .vertical-menu .container{
 	width:100%;
 }
 .vertical-menu .col-4 .portfolio-item{
 	width:33.3333%;
 }
-@media(max-width:1200px) { 
+@media(max-width:1200px) {
 .vertical-menu .header{
 	width:240px;
 }
@@ -33,7 +33,7 @@
 	width: 33.3333%;
 }
 header {
-	margin-top: 40px;
+	margin-top: 0px;
 }
 .single-pages .ownmenu{
 	float:right;
@@ -339,7 +339,7 @@ header .logo{
 }
 .vertical-menu{
 	padding-left:0px;
-	
+
 }
 header .ownmenu ul.dropdown {
 }
