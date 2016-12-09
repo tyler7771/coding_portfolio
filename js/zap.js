@@ -17,9 +17,9 @@ $(".sticky").sticky({topSpacing:0});
 /*-----------------------------------------------------------------------------------*/
 $('.full-screen').superslides({});
 /*-----------------------------------------------------------------------------------*/
-/* 	TEAM SLIDER 
+/* 	TEAM SLIDER
 /*-----------------------------------------------------------------------------------*/
-$(".team-slider").owlCarousel({ 
+$(".team-slider").owlCarousel({
 	autoplay:false,
 	autoplayHoverPause:true,
 	singleItem	: true,
@@ -42,7 +42,7 @@ $(".team-slider").owlCarousel({
 /*-----------------------------------------------------------------------------------*/
 /* 	SINGLE SLIDE
 /*-----------------------------------------------------------------------------------*/
-$(".single-slides").owlCarousel({ 
+$(".single-slides").owlCarousel({
     items : 1,
 	autoplay:false,
 	autoplayHoverPause:true,
@@ -51,12 +51,12 @@ $(".single-slides").owlCarousel({
 	lazyLoad:true,
 	nav: true,
 	loop: true,
-	animateOut: 'fadeOut'	
+	animateOut: 'fadeOut'
 });
 /*-----------------------------------------------------------------------------------*/
-/* 	TEAM SLIDER 
+/* 	TEAM SLIDER
 /*-----------------------------------------------------------------------------------*/
-$(".clients-slider").owlCarousel({ 
+$(".clients-slider").owlCarousel({
 	autoplay:false,
 	autoplayHoverPause:true,
 	singleItem	: true,
@@ -79,7 +79,7 @@ $(".clients-slider").owlCarousel({
 /*-----------------------------------------------------------------------------------*/
 /* 	Slider 3 SEC
 /*-----------------------------------------------------------------------------------*/
-$(".slider-three-item").owlCarousel({ 
+$(".slider-three-item").owlCarousel({
 	autoplay:false,
 	autoplayHoverPause:true,
 	singleItem	: true,
@@ -123,9 +123,9 @@ $('.progress-bars').waypoint(function() {
       width:$(this).attr('data-percent')
      },200);
 });},
-	{ 
+	{
 	offset: '100%',
-    triggerOnce: true 
+    triggerOnce: true
 });
 /*-----------------------------------------------------------------------------------*/
 /* 	SLIDER REVOLUTION
@@ -140,15 +140,15 @@ jQuery('.tp-banner').show().revolution({
 	navigationStyle:"preview4",
 	parallax:"mouse",
 	parallaxBgFreeze:"on",
-	parallaxLevels:[7,4,3,2,5,4,3,2,1,0],												
-	keyboardNavigation:"on",						
+	parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+	keyboardNavigation:"on",
 	shadow:0,
 	fullWidth:"on",
 	fullScreen:"on",
-	shuffle:"off",						
-	autoHeight:"off",						
-	forceFullWidth:"off",	
-	fullScreenOffsetContainer:""	
+	shuffle:"off",
+	autoHeight:"off",
+	forceFullWidth:"off",
+	fullScreenOffsetContainer:""
 });
 /*-----------------------------------------------------------------------------------*/
 /* 	SLIDER REVOLUTION
@@ -163,8 +163,8 @@ jQuery('.tp-banner-fix').show().revolution({
 	navigationStyle:"preview4",
 	parallax:"mouse",
 	parallaxBgFreeze:"on",
-	parallaxLevels:[7,4,3,2,5,4,3,2,1,0],												
-	keyboardNavigation:"on",						
+	parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+	keyboardNavigation:"on",
 	fullWidth:"off",
 	fullScreen:"off"
 });
@@ -186,7 +186,7 @@ var $container = $('.port-wrap .items');
     $container.isotope({
     itemSelector: '.portfolio-item',
     layoutMode: 'masonry'
-});	
+});
 });
 $('.portfolio-filter li a').on('click', function () {
     $('.portfolio-filter li a').removeClass('active');
@@ -212,8 +212,8 @@ $('.scroll a').bind('click', function(event) {
 /*-----------------------------------------------------------------------------------*/
 $(window).scroll(function(event) {
 		Scroll();
-});	
-$('.scroll a').click(function() {  
+});
+$('.scroll a').click(function() {
 	$('html, body').animate({scrollTop: $(this.hash).offset().top -50}, 1000);
 		return false;
 });
@@ -232,7 +232,7 @@ $.each( contentTop, function(i){
 if ( winTop > contentTop[i] - rangeTop ){
 	$('nav li.scroll')
 	  .removeClass('active')
-		.eq(i).addClass('active');			
+		.eq(i).addClass('active');
 }}  )};
 /*-----------------------------------------------------------------------------------*/
 /*	LEFT MENU
@@ -245,7 +245,7 @@ jQuery(document).ready(function($){
 	//open-close lateral menu clicking on the menu icon
 	$lateral_menu_trigger.on('click', function(event){
 		event.preventDefault();
-		
+
 		$lateral_menu_trigger.toggleClass('is-clicked');
 		$navigation.toggleClass('lateral-menu-is-open');
 		$content_wrapper.toggleClass('lateral-menu-is-open').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
@@ -253,7 +253,7 @@ jQuery(document).ready(function($){
 			$('body').toggleClass('overflow-hidden');
 		});
 		$('#cd-lateral-nav').toggleClass('lateral-menu-is-open');
-		
+
 		//check if transitions are not supported - i.e. in IE9
 		if($('html').hasClass('no-csstransitions')) {
 			$('body').toggleClass('overflow-hidden');
@@ -294,7 +294,7 @@ var offset = 300,
 //hide or show the "back to top" link
 $(window).scroll(function(){
 	( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-	if( $(this).scrollTop() > offset_opacity ) { 
+	if( $(this).scrollTop() > offset_opacity ) {
 		$back_to_top.addClass('cd-fade-out');
 	}
 });
@@ -312,16 +312,16 @@ $back_to_top.on('click', function(event){
 /*-----------------------------------------------------------------------------------*/
 function checkmail(input){
   var pattern1=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-  	if(pattern1.test(input)){ return true; }else{ return false; }}     
+  	if(pattern1.test(input)){ return true; }else{ return false; }}
     function proceed(){
     	var name = document.getElementById("name");
 		var email = document.getElementById("email");
 		var company = document.getElementById("company");
 		var msg = document.getElementById("message");
 		var errors = "";
-		if(name.value == ""){ 
+		if(name.value == ""){
 		name.className = 'error';
-	  	  return false;}    
+	  	  return false;}
 		  else if(email.value == ""){
 		  email.className = 'error';
 		  return false;}
@@ -334,7 +334,7 @@ function checkmail(input){
 		   else if(msg.value == ""){
 		        msg.className = 'error';
 		        return false;}
-		   else 
+		   else
 		  {
 	$.ajax({
 		type: "POST",
@@ -350,9 +350,3 @@ function checkmail(input){
 		}}
 	});
 }};
-
-
-
-
-
-
