@@ -7236,3 +7236,9 @@ blockquote cite {
 .devicon-typescript-plain {
   line-height: 65px !important;
 }
+.fa-github,
+.fa-linkedin,
+.fa-facebook-square,
+.fa-twitter {
+  font-size: 100px;
+}
